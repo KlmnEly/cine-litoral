@@ -1,0 +1,151 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style-reserva.css">
+</head>
+<body>
+    <div id="container">
+<header>
+        <h2 class="logo">CineLandia</h2>
+
+        <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#footer">Contactanos</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="#footer">Nosotros</a>
+        </nav>
+
+        <div class="redes">
+            <a href="https://youtube.com"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt=""></a>
+            <a href="https://facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt=""></a>
+            <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+        </div>
+    </header>
+
+    <div class="banner"><img src="https://pbs.twimg.com/media/GPJ7yBxXYAE9sPS.jpg:large" alt=""></div>
+
+    <div class="form-box">
+        
+        <section class="formulario"> 
+            <h2>Revervacion</h2>
+            <form action="php/boletas.php" method="post">
+                <label>Documento <br><input type="number" name="documento" placeholder="Ingrese Documento"></label>
+                <label>Nombre <br><input type="text" name="nombre" placeholder="Ingrese Nombre"></label>
+                <label>Telefono <br><input type="tel" name="telefono" placeholder="Ingrese Telefono"></label>
+                <label>Correo <br><input type="email" name="correo" placeholder="Ingrese Correo"></label>
+                <label>Pelicula <br><input list="listaPeliculas" name="pelicula" placeholder="Elija su Pelicula">
+                <datalist id="listaPeliculas">
+                <option value="Aladdin"></option>
+                <option value="BeetleJuice"></option>
+                <option value="Exodo"></option>
+                <option value="Furiosa"></option>
+                <option value="Guason"></option>
+                <option value="RobotSalvaje"></option>
+                <option value="Sonrie"></option>
+                <option value="Venom"></option>
+                </datalist>
+                </label>
+                <label>Dia <br><input list="dia" name="dia" placeholder="Elija el dia">
+                <datalist id="dia">
+                    <option value="lunes"></option>
+                    <option value="martes"></option>
+                    <option value="miercoles"></option>
+                    <option value="jueves"></option>
+                    <option value="viernes"></option>
+                    <option value="sabado"></option>
+                    <option value="domingo"></option>
+                </datalist>
+                </label>
+                <label>Entradas <br><input type="number" name="entradas" placeholder="Ingrese cantidad"></label><br>
+                <button type="submit">Comprar</button>
+            </form>
+        </section>
+
+
+
+        <section class="tarifas">
+            <table>
+                <tr>
+                    <th>Dia</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>$ 7.000</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>$ 8.500</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>$ 8.500</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>$ 9.500</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>$ 9.500</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>$ 12.000</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>$ 12.000</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="footer">
+            <section class="encuentranos">
+                <h2 class="logo">CineLandia</h2>
+                <span class="logo-encuentranos"><img src="img/phone.png" alt=""> <p>+57 304416237</p></span>
+                <span class="logo-encuentranos"><img src="img/mail.png" alt=""> <p>mirandakelmin@litoral.edu.co</p></span><span class="logo-encuentranos"><img src="img/map-pin.png" alt=""> <p>Calle 79 #42F 110</p></span>
+            </section>
+            <section class="footerNav">
+                <h2>Enlances</h2>
+                    <a href="index.html">Inicio</a>
+                    <a href="#footer">Contactanos</a>
+                    <a href="reserva.html">Reserva</a>
+                    <a href="#footer">Nosotros</a>
+                    
+            </section>
+            <section class="footerRedes">
+                <h2>Redes Sociales</h2>
+                <a href="https://youtube.com"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt=""></a>
+                <a href="https://facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt=""></a>
+                <a href="https://instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt=""></a>
+            </section>
+            <section class="footerRegistro">
+                <form action="">
+                    <h2>Unete a Nosotros!</h2>
+                    <span>Usuario</span>
+                    <input type="text">
+                    <span>Correo Electronico</span>
+                    <input type="email">
+                    <span>Contraseña</span>
+                    <input type="password">
+
+                    <button type="submit" name="reserva">Registrar</button>
+                </form>
+            </section>
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>

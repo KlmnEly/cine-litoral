@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+#container {
+    width: 100%;
+    height: 830px;
+}
+
+header {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    margin-left: -100px;
+    font-size: 2em;
+    color: #123456;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 8px 0px 12px 4px rgba(255, 9, 1, 0.646);
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #123456;
+    margin-left: 40px;
+    position: relative;
+    font-size: 1.1em;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 8px 0px 12px 4px rgba(255, 9, 1, 0.646);
+}
+
+nav a:after {
+    content: '';
+    background: #123456;
+    border-radius: 5px;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    position: absolute;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.redes {
+    margin-right: -100px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+
+.banner {
+    width: 100%;
+    height: 40%;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.form-box {
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/010/454/507/small_2x/3d-render-of-cinema-time-with-reel-film-clapper-board-drink-mug-popcorn-free-photo.JPG') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    color: #123456;;
+}
+
+.formulario h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.form-box section {
+    margin: auto 100px;
+    height: 95%;
+}
+
+.formulario {
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 100%;
+    min-width: 320px;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+}
+
+.formulario form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.formulario label {
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.formulario input {
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.formulario button {
+    border: 2px solid #123456;
+    border-radius: 5px;
+    padding: 3px;
+    color: #123456;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background: rgb(94, 250, 123);
+    }
+}
+
+
+
+
+.tarifas table {
+    height: 80%;
+    color: #000;
+    
+}
+
+.tarifas th {
+    text-align: center;
+    background: #878787;
+}
+
+.tarifas table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.tarifas td, th {
+    min-width: 100px;
+    width: 200px;
+    background: #fff;
+    padding: 3px;
+}
+
+.tarifas table tr td:nth-child(2) {
+    text-align: right;
+}
+
+
+#footer {
+    width: 100%;
+    font-size: 1em;
+    background: lightgray;
+    position: relative;
+    bottom: 0;
+}
+
+#footer h2 {
+    font-size: 1.3em;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px 40px 10px;
+}
+
+.encuentranos {
+    display: flex;
+    flex-flow: column;
+    height: 50%;
+    gap: 10px;
+}
+
+.encuentranos .logo {
+    margin:20px 0;
+    box-shadow: none;
+    background: none;
+}
+
+.logo-encuentranos img{
+    width: 30px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-encuentranos p {
+    margin-top: -28px;
+    margin-left: 40px;
+    height: 100%;
+    
+}
+
+.logo-encuentranos {
+    height: 30%;
+    
+}
+
+.footerNav {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footerNav a {
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+}
+
+.footerNav h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #123456;
+}
+
+.footerRedes {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footerRedes h2 {
+    color: #123456;
+}
+
+.footerRedes img {
+    width: 30px;
+    height: 30px;
+}
+
+.footerRegistro form{
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+    align-items: center;
+    background: linear-gradient(rgb(124, 137, 145), #dbd4ba);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footerRegistro h2 {
+    margin-bottom: 5px;
+}
+
+.footerRegistro input {
+    border-radius: 5px;
+}
+
+.footerRegistro p {
+    font-weight: 700;
+}
+
+.footerRegistro button {
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid black;
+    color: #123456;
+    font-weight: bold;
+    margin: 3px;
+    cursor: pointer;
+
+    &:hover {
+        background: rgb(94, 250, 123);
+    }
+}
