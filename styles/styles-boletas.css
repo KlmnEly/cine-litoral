@@ -5,15 +5,13 @@
     font-family: cursive;
 }
 
-
-
 header {
     background: #fff;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: 6%;
+    height: 50px;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
@@ -90,12 +88,12 @@ nav a:hover::after {
 
 #container {
     width: 100%;
-    height: 830px;
+    height: auto;
 }
 
 .tabla-entradas {
     width: 100%;
-    height: max-content;
+    height: auto;
     padding: 20px;
     display: flex;
     flex-flow: column;

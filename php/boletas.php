@@ -22,6 +22,7 @@ include 'mostrar.php';
         <a href="#footer">Contactanos</a>
         <a href="../reserva.html">Reserva</a>
         <a href="#footer">Nosotros</a>
+        <a href="php/boletas.php">Boletas</a>
         </nav>
 
         <div class="redes">
@@ -138,8 +139,10 @@ include 'mostrar.php';
                     <a href="#footer">Contactanos</a>
                     <a href="../reserva.html">Reserva</a>
                     <a href="#footer">Nosotros</a>
+                    <a href="php/boletas.php">Boletas</a>
                     
             </section>
+            
             <section class="footerRedes">
                 <h2>Redes Sociales</h2>
                 <a href="https://youtube.com"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt=""></a>
